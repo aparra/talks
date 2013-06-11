@@ -1,0 +1,23 @@
+Resumo da Palestra
+
+Começamos testando métodos simples mas e quando dependemos de objetos com determinados valores para realizar o teste, como fazer?
+Venha conhecer uma solução alternativa para suas Fixtures hard-coded: o Fixture-Factory (https://github.com/six2six/fixture-factory), um framework que surgiu para auxiliar na criação e manutenção de objetos utilizados nos testes, tudo isto de uma maneira simples e intuitiva através da declaraçāo de templates que facilitam na caracterização dos seus cenários.
+
+Descrição da palestra
+
+Já faz algum tempo que a comunidade de desenvolvimento de software discute a necessidade de garantir a qualidade do que está sendo desenvolvido. Em busca desta garantia surgiram algumas soluções como o uso de testes automatizados, TDD e a popularização de testes unitários. Aplicar estes conceitos é complicado no inicio é preciso introduzir um paradigma novo na rotina de desenvolvimento e uma grande dificuldade encontrada pelos desenvolvedores é a criação de dados necessários para realização dos testes.
+
+Uma das soluções mais utilizadas é o uso de Fixtures, utilizadas para especificar os dados que serão utilizados pelos testes, normalmente armazenados em yaml (popularizado pelo ruby), xml, json, etc. É possível utilizar esses dados para mockar resultados de métodos, consultas a base de dados, consultas webservices entre outras integrações possíveis em um sistema.
+
+O grande problema das Fixtures é que elas acabam tornando-se difíceis de manter à longo prazo. Com o passar do tempo a tendência é  a proliferação de arquivos Fixtures e na maioria dos casos arquivos grandes de mais que dificultam a manutenção. Além disso os dados configurados nas Fixtures são em sua grande maioria hard-coded, o que muitas vezes leva o programador a escrever testes baseado nesses dados específicos (vício dos dados). O problema de testar baseado em dados fixos é que quando os dados mudarem o código pode não funcionar.
+
+Nesta palestra apresento uma solução alternativa/complementar as Fixtures, que é o Fixture-Factory (https://github.com/six2six/fixture-factory) um framework que auxilia na criação de objetos necessários para seus testes a partir de templates que são especificações de como deve ser um determinado dado para um determinado tipo. Tudo isto feito programaticamente visando facilitar a manutenção.
+
+Tópicos que serão explorados na palestra:
+- Cenário onde os dados passam a ser problemas
+- Fixtures: criação, utilização, vantagens e desvantagens
+- Apresentação do framework Fixture-Factory
+- Templates: criação, utilização, vantagens e desvantagens
+- Boa dependência: cenários 
+
+Esta palestra também foi apresentada no Encontro de TDD realizado pela Caelum em Janeiro/2013 (http://www.caelum.com.br/evento/encontro-tdd/) e atualmente foi publicado um artigo sobre o framework na MundoJ (edição 59)
